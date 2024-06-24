@@ -1,0 +1,19 @@
+$font-family-pref: "Berkeley Mono", "Inconsolata", "Hack", "SF Mono", "Roboto Mono";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.1/css/bulma.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css";
+
+* {
+  font-family: $font-family-pref;
+}
+
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+blink{animation: blink 1s infinite;}
