@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<section class="section">
+    <div class="container">
+        <div class="block">
+            <div class="content">
+                <h1 class="title">
+                    <a href="https://guzman.io">~alex_guzman</a>/<a href="{{ site.url }}">blog</a>/<a href="{{ page.url }}">{{ page.name }}</a>
+                </h1>
+            </div>
+        </div>
+        <div class="block">
+            <div class="content">
+                <h2 class="subtitle">{{ page.title }}</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="content">
+                Posted <strong>{{ page.date | timeago }} ({{ page.date }})</strong>
+            </div>
+        </div>
+        <div class="block">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</section>
