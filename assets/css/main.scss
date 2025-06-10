@@ -2,3 +2,12 @@
 ---
 
 @import "base";
+
+.index-pre table {
+    margin: 0 !important;
+    padding:0 !important;
+}
+
+.index-pre table tr td {
+    padding: 0;
+}
