@@ -10,6 +10,13 @@
       <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     </head>
   <body>
-    {{ content }}
+      <section class="section">
+          <div class="container">
+              {{ content }}
+              <footer>
+                  blog revision {% project_version commit long %}
+              </footer>
+          </div>
+      </section>
   </body>
 </html>
