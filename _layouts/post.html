@@ -1,5 +1,6 @@
 ---
 layout: default
+timeago: true
 ---
 
 <div class="block">
@@ -17,7 +18,7 @@ layout: default
     </div>
 </div>
 <div class="block">
-    <div class="content">Posted <strong>{{ page.date | timeago }} ({{ page.date }})</strong></div>
+    <div class="content"><time id="postedondate" datetime="{{ page.date | date_to_xmlschema }}">Posted <span id="postedagodate"></span> on {{ page.date | date: "%B %-d, %Y" }}</time></div>
 </div>
 <div class="block">
     <div class="content">{{ content }}</div>
