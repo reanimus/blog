@@ -18,7 +18,7 @@ timeago: true
     </div>
 </div>
 <div class="block">
-    <div class="content"><time id="postedondate" datetime="{{ page.date | date_to_xmlschema }}">Posted <span id="postedagodate"></span> on {{ page.date | date: "%B %-d, %Y" }}</time></div>
+    <div class="content">Posted <time id="postedon" datetime="{{ page.date | date_to_xmlschema }}"><span id="postedago"></span> on <span>{{ page.date | date: "%B %-d, %Y" }}</span></time></div>
 </div>
 <div class="block">
     <div class="content">{{ content }}</div>
