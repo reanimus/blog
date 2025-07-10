@@ -8,7 +8,8 @@
       <link rel="icon" href="/favicon.png" type="image/x-icon">
       <link rel="stylesheet" href="{{ "/assets/fonts/BerkeleyMono.css" | relative_url }}">
       <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-{% if layout.timeago %}      <script src="{{ "/assets/js/timeago.js" | relative_url }}" defer></script>{% endif %}
+{% if layout.timeago %}      <script src="{{ "/assets/js/javascript-time-ago.js" | relative_url }}" defer></script>
+      <script src="{{ "/assets/js/timeago.js" | relative_url }}" type="module"></script>{% endif %}
 </head>
   <body>
       <section class="section">
